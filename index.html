@@ -1,22 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-66779785-2"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'UA-66779785-2');
-    </script>
 
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Chewy">
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Fontdiner+Swanky">
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway:700">
+    <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
 
     <link rel="stylesheet" type="text/css" href="css/bootstrap-3.3.5.min.css">
     <link rel="stylesheet" type="text/css" href="css/animate-3.4.0.min.css">
@@ -25,7 +20,7 @@
 
     <link rel="icon" href="favicon.ico">
 
-    <title>Gift Grabber</title>
+    <title>Where is My Gift?</title>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn"t work if you view the page via file:// -->
@@ -33,19 +28,20 @@
         <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-  </head>
-  <body>
+</head>
+
+<body>
 
     <div id="game-container" class="container">
 
         <div class="header">
-            <h1>Gift Grabber</h1>
+            <h1>Where Is My Gift?</h1>
         </div>
 
         <div id="button-box" class="alert alert-info fade in animated fadeIn" role="alert">
             <span id="info-buttons">
                 <span class="btn btn-default" data-toggle="modal" data-target="#rules">Rules</span>
-                <span class="btn btn-default" data-toggle="modal" data-target="#about">About</span>
+
             </span>
             <span id="game-buttons">
                 <span id="restart-button" class="btn btn-primary">Restart</span>
@@ -56,37 +52,13 @@
 
     </div>
 
-    <!-- Modal dialogs -->
-    <div id="about" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="about-modal-title">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h4 id="about-modal-title" class="modal-title">About</h4>
-                </div>
-
-                <div class="modal-body">
-                    Gift Grabber is inspired by the classic Commodore Amiga game Flag Catcher.
-                    <br><br>
-                    Created by <a href="https://twitter.com/Ceva24">Chris Evans</a>, 2015 using Bootstrap, Backbone.js and Animate.css.
-                    <br>
-                    View the <a href="https://github.com/Ceva24/gift-grabber">source code</a> on Github!
-                </div>
-
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <div id="rules" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="rules-modal-title">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
 
                 <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
                     <h4 id="rules-modal-title" class="modal-title">Rules</h4>
                 </div>
 
@@ -102,7 +74,8 @@
                         </div>
                         <div class="row rules-row">
                             <div class="col-lg-6">
-                                <div id="arrow-rules-text" class="rules-text">Arrows indicate the general direction the gift tile is in</div>
+                                <div id="arrow-rules-text" class="rules-text">Arrows indicate the general direction the
+                                    gift tile is in</div>
                             </div>
                             <div class="col-lg-6">
                                 <img src="images/arrow-tile.png">
@@ -110,7 +83,8 @@
                         </div>
                         <div class="row rules-row">
                             <div class="col-lg-6">
-                                <div id="number-rules-text" class="rules-text">Numbers represent how far away the gift tile is (doesn't include diagonal movement)</div>
+                                <div id="number-rules-text" class="rules-text">Numbers represent how far away the gift
+                                    tile is (doesn't include diagonal movement)</div>
                             </div>
                             <div class="col-lg-6">
                                 <img src="images/number-tile.png">
@@ -118,7 +92,8 @@
                         </div>
                         <div class="row rules-row">
                             <div class="col-lg-6">
-                                <div id="fire-rules-text" class="rules-text">Fire tiles will hide all other revealed tiles on the board</div>
+                                <div id="fire-rules-text" class="rules-text">Fire tiles will hide all other revealed
+                                    tiles on the board</div>
                             </div>
                             <div class="col-lg-6">
                                 <img src="images/fire-tile.png">
@@ -126,7 +101,8 @@
                         </div>
                         <div class="row rules-row">
                             <div class="col-lg-12">
-                                <div class="rules-text">As you reach higher levels the number of moves and helpful tiles will decrease and the number of fire tiles will increase!</div>
+                                <div class="rules-text">As you reach higher levels the number of moves and helpful tiles
+                                    will decrease and the number of fire tiles will increase!</div>
                             </div>
                         </div>
                     </div>
@@ -167,5 +143,6 @@
     <script type="text/javascript" src="js/gift-grabber.js"></script>
     <script type="text/javascript" src="js/models.js"></script>
     <script type="text/javascript" src="js/views.js"></script>
-  </body>
+</body>
+
 </html>
